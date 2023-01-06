@@ -3,7 +3,7 @@
   box-shadow: 0 1px 8px rgba(1, 2, 0, 0.25);
   background-color: #a892ee;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 25rem;
   max-width: 95%;
   border-radius: 12px;
@@ -43,6 +43,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
+  margin-left: 2rem;
   text-align: left;
 }
 
@@ -63,4 +64,6 @@
 
 .form_actions {
   text-align: left;
+  margin-left: 8rem;
+  margin-top: 1rem;
 }
