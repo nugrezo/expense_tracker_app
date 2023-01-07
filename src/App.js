@@ -28,10 +28,14 @@ const DUMMY_EXPENSES = [
   },
 ];
 
+const userInputHandler = (inputData) => {
+  console.log("input data is ", inputData);
+};
+
 function App() {
   return (
     <div className="App">
-      <NewExpenseEntry />
+      <NewExpenseEntry onUserInput={userInputHandler} />
     </div>
   );
 }
