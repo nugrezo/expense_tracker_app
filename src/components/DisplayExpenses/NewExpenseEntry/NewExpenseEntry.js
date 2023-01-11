@@ -13,11 +13,14 @@ const NewExpenseEntry = (props) => {
     event.preventDefault();
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
-      date: enteredDate,
+      amount: +enteredAmount,
+      date: new Date(enteredDate),
       id: Math.random().toString(),
     };
     props.onUserInput(expenseData);
+    title.current.value = "";
+    amount.current.value = "";
+    date.current.value = "";
   };
 
   return (

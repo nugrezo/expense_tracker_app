@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 import NewExpenseEntry from "./components/DisplayExpenses/NewExpenseEntry/NewExpenseEntry";
+import AllExpenses from "./components/ExpensesList/AllExpenses";
 
 const DUMMY_EXPENSES = [
   {
@@ -28,14 +30,18 @@ const DUMMY_EXPENSES = [
   },
 ];
 
-const userInputHandler = (inputData) => {
-  console.log("input data is ", inputData);
-};
-
 function App() {
+  const [enteredValue, setEnteredValue] = useState(DUMMY_EXPENSES);
+  const userInputHandler = (inputData) => {
+    console.log("userInput is ", inputData);
+    setEnteredValue((prevState) => {
+      return [inputData, ...prevState];
+    });
+  };
   return (
     <div className="App">
       <NewExpenseEntry onUserInput={userInputHandler} />
+      <AllExpenses expenses={enteredValue} />
     </div>
   );
 }
