@@ -5,7 +5,7 @@ import ExpenseList from "./ExpenseList";
 const AllExpenses = (props) => {
   return (
     <div className={classes.expenses}>
-      <ExpenseList items={props.expenses} />
+      <ExpenseList items={props.expenses} deleteExpense={props.onDelete} />
     </div>
   );
 };

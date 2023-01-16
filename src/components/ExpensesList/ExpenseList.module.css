@@ -1,4 +1,9 @@
 .expense_list {
   list-style: none;
   padding: 0;
+  cursor: pointer;
+}
+
+.expense_item:hover {
+  background-color: red;
 }

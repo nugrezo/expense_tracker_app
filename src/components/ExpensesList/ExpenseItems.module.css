@@ -6,6 +6,7 @@
   margin: 1rem 0;
   background-color: #ddb3f8;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .expense_item_description {
@@ -36,17 +37,21 @@
 }
 
 @media (min-width: 580px) {
-  .expense-item__description {
+  .expense_item_description {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     flex: 1;
   }
-  .expense-item__description h2 {
+  .expense_item_description h2 {
     font-size: 1.25rem;
   }
-  .expense-item__price {
+  .expense_item_price {
     font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
   }
+}
+
+.expense_item:hover {
+  background-color: red;
 }

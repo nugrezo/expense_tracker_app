@@ -38,10 +38,19 @@ function App() {
       return [inputData, ...prevState];
     });
   };
+
+  const deleteItemHandler = (dataId) => {
+    console.log("app.js delete button is working");
+    setEnteredValue((prevData) => {
+      const updatedData = prevData.filter((data) => data.id !== dataId);
+      return updatedData;
+    });
+  };
+
   return (
     <div className="App">
       <NewExpenseEntry onUserInput={userInputHandler} />
-      <AllExpenses expenses={enteredValue} />
+      <AllExpenses expenses={enteredValue} onDelete={deleteItemHandler} />
     </div>
   );
 }

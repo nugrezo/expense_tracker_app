@@ -13,6 +13,7 @@ const NewExpenseEntry = (props) => {
     const enteredTitle = title.current.value;
     const enteredAmount = amount.current.value;
     const enteredDate = date.current.value;
+
     event.preventDefault();
     const expenseData = {
       title: enteredTitle,
