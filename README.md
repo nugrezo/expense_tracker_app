@@ -67,6 +67,6 @@ To experience the Expense Tracker Application locally:
 
 - Ergun Oz
 
-Feel free to explore and contribute to this Expense Tracker Application. For inquiries or suggestions, please contact [Your Email Address].
+Feel free to explore and contribute to this Expense Tracker Application. For inquiries or suggestions, please contact me through my github page.
 
 Happy tracking! 🚀
