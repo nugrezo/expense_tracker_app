@@ -63,6 +63,20 @@ To experience the Expense Tracker Application locally:
 - HTML
 - CSS
 
+## Application Screenshots
+
+1. **Adding a new expense.**
+   ![Adding Expense](media/Adding_Expense.png)
+
+2. **Added expense**
+   ![Added_Expense](media/Added_Expenses.png)
+
+3. **Delete Expense**
+   ![Delete_Expense](media/Delete_Expense.png)
+
+4. **View All Expenses**
+   ![ViewAllExpenses_Expense](media/ViewAllExpenses.png)
+
 ## Contributor
 
 - Ergun Oz
